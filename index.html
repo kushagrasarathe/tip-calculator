@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Billing Page</title>
+</head>
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand text text-black" href="#">
+                Welcome to Billing Page
+            </a>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center mt-5">
+
+        <!-- Bootstrap -->
+        <div class="card bg-secondary" style="width: 500px; height: auto;">
+
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Bill and Tip Calculator</h5>
+                <form class="row g-3 mt-2 ">
+
+                    <!-- Bill -->
+                    <div class="container d-inline-flex">
+
+                        <div class="col-md-6 d-inline-flex mt-2">
+                            <label for="inputEmail4" class="form-label">Bill:</label>
+                        </div>
+                        <div class="col-md-6 d-inline-flex">
+                            <input type="text" id="search" placeholder="Bill Amount"
+                                class="justify-content-center bill" style="width: 200px; height: 35px;">
+                        </div>
+
+                    </div>
+
+                    <!-- Rate Service -->
+                    <div class="container d-inline-flex">
+
+                        <div class="col-md-6 d-inline-flex mt-2">
+                            <label for="inputEmail4" class="form-label">Rate Service:</label>
+                        </div>
+                        <div class="col-md-6 d-inline-flex">
+                            <select class="form-select rate" style="width: 200px;">
+                                <option selected>Select and Option</option>
+                                <option value="0.25">25% - Excellent</option>
+                                <option value="0.2">20% - Good</option>
+                                <option value="0.15">15% - Fair</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Bill Calculation -->
+
+                    <div class="row-md-6 mt-4">
+                        <button class="btn btn-primary">Calculate</button>
+                    </div>
+                    <!-- <div class="row-md-6 mt-4"> -->
+                        <p class="error">HELOOO</p>
+                    <!-- </div> -->
+
+                    <!-- Bill Details -->
+                    <!-- <div class="row-md-6 mt-3 result"> -->
+
+                        <p class="tip">Tip amount: $0</p>
+
+                    <!-- </div> -->
+                    <!-- <div class="row-md-6 mt-3 result"> -->
+
+                        <p class="total">Total amount: $0</p>
+
+                    <!-- </div> -->
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"  crossorigin="anonymous"></script>
+</body>
+
+</html>
